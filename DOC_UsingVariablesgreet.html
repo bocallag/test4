@@ -1,0 +1,33 @@
+
+
+
+
+<!doctype html>
+<!-- VariableGreet.html                            Dr. O'C -->
+<!-- Web page that displays a personalized greeting. -->
+<!-- the first JavaScript statement associated with the -->
+<!-- button's ONCLICK attribute is an assignment -->
+<!-- that stores the contents of nameBox in a variable.-->
+<!-- that variable should be integrated into the message -->
+<!-- being displayed (as opposed to the full getElementById expression -->
+<!-- =============================================== -->
+
+<html>
+ <head>
+   <title> Greetings </title>
+ </head>
+
+ <body>
+   <h2>Greetings</h2>
+   <p>
+     Enter your name: <input type="text" id="nameBox" size=12 value="anyone Home ">
+   </p>
+   <input type="button" value="Click for Greeting"
+         onclick="userName = document.getElementById('nameBox').value; 
+                   document.getElementById('outputDiv').innerHTML=
+                   'Hello <i>' + userName + '</i>, welcome to my page.<br>' +
+                   'Do you mind if I call you <i>' + userName + '</i>?';">
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

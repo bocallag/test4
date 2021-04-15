@@ -1,0 +1,50 @@
+<!doctype html>
+
+<!-- story.html	Dr.O'C-->
+<!-- Web page that displays an interactive story.	-->
+<!-- =============================================== -->
+
+<html>
+   <head>
+       <title> Dr. O'C's Story Time </title>
+   </head>
+
+   <body>
+   <h2>Dr. O'C's Story Time</h2>
+
+   <p>
+      Enter an adjective to describe the weather: <input type="text" id="adjectiveBox" value="Warm">
+      <br>
+      Enter a boy's name: <input type="text" id="boyBox" value="Joe">
+      <br>
+      Enter a color for the sky: <input type="text" id="colorBox" value="blue">
+      <br>
+      Enter an animal used for a pet: <input type="text" id="animalBox" value="dog">
+      <br>
+      Enter an exclamation word: <input type="text" id="wordBox" value="Awesome">
+      <br>
+      Enter a place: <input type="text" id="locationBox" value="park">
+    </p> 
+   <hr>
+   <input type="button" value="Click for Story"
+          onclick="adjective = document.getElementById('adjectiveBox').value; 
+                   boy = document.getElementById('boyBox').value;
+                   color = document.getElementById('colorBox').value; 
+                   animal = document.getElementById('animalBox').value; 
+                   exclaim = document.getElementById('wordBox').value; 
+                   place = document.getElementById('locationBox').value; 
+   
+                   document.getElementById('outputDiv').innerHTML=
+                   '<p> It was a ' + adjective + ' kind of day when ' + boy +
+                   ' walked out into the street. The sky was ' + color + 
+                   ' and ' + boy + ' was excited to take his pet ' + animal + ' on a walk.</p>' +
+                   '<p><i>' + exclaim + '</i>, said ' + boy + ' as he started off'  +
+                    ' on a long walk with his ' + animal +
+                  ' . He ran to the ' + place + ' and played with his ' + animal +' . <br> <br> The End </p>'
+                    ; " >
+
+    <hr>
+   <div id="outputDiv"></div>
+  </body>
+</html>
+
